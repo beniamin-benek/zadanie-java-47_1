@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Arrays;
 import java.util.Scanner;
 
 class ProductsCalculator {
@@ -40,11 +41,11 @@ class ProductsCalculator {
     static Product findMostExpensive(Product[] products) {
 
         Product mostExpensive = new Product();
-        double maxx = products[0].getPrice();
+        double max = products[0].getPrice();
 
         for (int i = 0; i < products.length; i++) {
-            if (maxx <= products[i].getPrice()) {
-                maxx = products[i].getPrice();
+            if (max <= products[i].getPrice()) {
+                max = products[i].getPrice();
                 mostExpensive = products[i];
             }
         }

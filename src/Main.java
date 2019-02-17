@@ -14,7 +14,7 @@ class Main {
         System.out.println("Lista produktów: \n" + Arrays.toString(products));
         System.out.println("Łączna cena wszystkich produktów: " + ProductsCalculator.sum(products));
         System.out.println("Najdroższy produkt: " + ProductsCalculator.findMostExpensive(products));
-
+        
     }
 
 }
